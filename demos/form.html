@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Demo</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <h1>Form Demo</h1>
@@ -15,6 +19,10 @@
         <label for="yborn">Enter Year Born</label>
         <input type="number" name="year" id="yborn" placeholder="yyyy"><br>
 
+        <button class="sendit" type="Submit">Submit</button>
+    </form>
+    <br>
+    <form id="zybook" action="https://wp.zybooks.com/form-viewer.php" method="GET">
         <label for="cb1">check 1</label>
         <input type="checkbox" name="cbox1" id="cb1"><br>
         <label for="cb2">check 2</label>
@@ -25,7 +33,7 @@
         <label for="rb2">radio 2</label>
         <input type="radio" name="rbutton" id="rb2"><br>
 
-        <button type="Submit">Submit</button>
+        <button class="sendit" type="input">Submit to Zybooks</button>
     </form>
 
 

@@ -1,0 +1,46 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container div {
+    border: 20px solid rgba(128, 128, 128, 0.4);
+    padding: 20px;
+    /* margin: 5px; */
+    background-color: rgba(159, 194, 181, 0.5);
+    box-sizing: border-box;
+}
+
+#floatwrap div {
+    width: 200px;
+    float: left;
+}
+
+.clear {
+    clear:both;
+}
+
+#flexwrap div {
+    width: 200px;
+    flex-basis: 50%;
+}
+
+#flexwrap  {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#gridwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 4fr 1fr 2fr;
+
+}
+
+#gridwrap .special {
+    background-color: darkorange;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+}
