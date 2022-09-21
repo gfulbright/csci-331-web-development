@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Javascript</title>
+    <style>
+        #answer{
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing JS...</h1>
+    <p>note: Inspect element and view Console Log</p>
+
+    <button onclick="add(3, 5)">Add 3 and 5</button><br><br><br>
+    
+    <input type="number" id="num1"><br>
+    <input type="number" id="num2"><br>
+    <!-- TODO: call add with user inputs -->
+
+    <button onclick="fnToCall(add)">+</button>
+    <button onclick="fnToCall(subtract)">-</button>
+    <button onclick="fnToCall(multiply)">&times;</button>
+    <button onclick="fnToCall(divide)">&divide;</button>
+    <button onclick="fnToCall(exponent)">^</button>
+    <button onclick="fnToCall(getSummation)">&sum;</button>
+    <button onclick="fnToCall(clearInputs)">C</button>
+    <br>
+    <span id="answer">[ ### ]</span>
+
+    <script src="../javascript/summation.js"></script>
+
+    <script>
+        function fnToCall(callback){
+            const num1 = parseFloat(document.getElementById('num1').value)
+            const num2 = parseFloat(document.getElementById('num2').value)
+            let result = callback(num1, num2)
+            const answer = document.getElementById('answer')
+            answer.innerHTML = result
+        }
+        
+        const add = (a, b) => a+b
+        const subtract = (a, b) => a-b
+        const multiply = (a, b) => a*b
+        const divide = (a, b) => a/b
+        const exponent = (a, b) => a**b
+
+        // function add(a, b) {
+        //     // console.log(a + b)
+        //     return (a + b)
+        // }
+        // function subtract(a, b) {
+        //     return (a - b)
+        // }
+        // function multiply(a, b) {
+        //     return (a * b)
+        // }
+        // function divide(a, b) {
+        //     return (a / b)
+        // }
+
+
+        // first = parseFloat(prompt("enter first number"))
+        // second = parseFloat(prompt("enter second number"))
+        // console.log('Add', first, "and", second, "from user input")
+        // add(first, second)
+    </script>
+</body>
+</html>
