@@ -1,0 +1,126 @@
+// --------------------------------------+
+40-50 pt quiz
+
+// --------------------------------------+
+covers first 6 weeks of syllabus
+
+chmod 711 ~
+> 711 -- who has permissions
+> ~ means home directory
+> only works on campus
+
+VPN - virtual private network
+
+// --------------------------------------+
+HTML - hypertext markup language
+> structural language
+> tags, opening and closing
+> attributes (name="value", etc.)
+> entities to create special characters
+
+// --------------------------------------+
+FORMS - widgets for collecting data from users
+> browser -> request -> server -> return result to browser
+> minimal form:
+    <form>
+        <input>
+    </form>
+> what server are we sending to?
+> what action are we executing?
+
+// --------------------------------------+
+Will need to write frontend:
+> HTML
+> CSS
+> JavaScipt
+
+Will not need to write backend:
+> PHP
+> MySQL
+> WebSockets
+
+// --------------------------------------+
+DOM - Document Object Model
+
+Document -- html -- head -- title
+             |
+             -- body -- p
+                 |
+                 -- p
+
+// --------------------------------------+
+CSS -- Cascading Style Sheets
+
+> name and value
+
+ img {
+    width:200px;
+ }
+
+ > selector (ex: .actualengilsh)
+    .actualengilsh {
+        color:red;
+    }
+
+ > class selector: '.'
+ > id selector: '#'
+
+ > Cascade
+    > specificity
+    > origin
+
+    > the closer you are to the HTML you are trying to render, the more precident you will have
+
+// --------------------------------------+
+COLOR
+> color is made of RGB
+> #FFFFFF is white
+
+// --------------------------------------+
+Box Model
+> found in inspect element
+> margin | border | padding | content | 
+
+// --------------------------------------+
+Display
+> inline
+> block
+> flex
+> grid
+
+// --------------------------------------+
+JavaScipt
+
+> if-else save as Java
+    > but no need for === in strongly typed Java
+> logical operators same as Java
+    > !, &&, ||
+> Truthy, Falsy
+    > False is 0, NaN, null, undefined/empty
+    > True is anything else
+
+> Functions
+    > Declared Function (named function, function statement)
+    > callback function : functions called as parameters
+
+> arrow function
+    > () => {}
+    > list of parameters (there are none)
+
+// --------------------------------------+
+ASYNCHRONOUS
+> chopping the carrots while the water is boiling
+
+
+// --------------------------------------+
+JSON
+AJAX
+
+// --------------------------------------+
+PROMISES
+> what they are and how they work
+
+// --------------------------------------+
+// --------------------------------------+
+// --------------------------------------+
+// --------------------------------------+

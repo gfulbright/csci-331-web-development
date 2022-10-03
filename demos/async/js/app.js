@@ -34,6 +34,17 @@ const countup = () => {
     myspan.innerText = count++
 }
 
+// let count1 = 10
+// const countdown = () {
+//     if(count1 != 0)
+//         myspan.innerText = count1--
+    
+//     else {
+//         myspan.innerText = "Blast Off!"
+//         clearInterval(counterID)
+//     }
+// }
+
 setInterval(countup, 500)
 
 
