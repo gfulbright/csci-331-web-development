@@ -1,0 +1,74 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery & Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 class="display-1">jQuery & Bootstrap</h1>
+    <!-- DOCUMENTATION >> https://www.w3schools.com/bootstrap5/index.php  -->
+
+    <div class="container">
+        <h2>jQuery</h2>
+
+        <!-- p*4>lorem50 -->
+        <div class="row">
+            <div class="col-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem amet repellendus quo vitae pariatur ad corporis, doloremque ipsum. Sequi quasi earum, dignissimos corrupti laboriosam rem nulla distinctio quo voluptates maiores voluptate officia ad error repellendus? Nihil, dicta maxime. Quibusdam doloribus praesentium incidunt sunt odit numquam possimus delectus atque impedit.</p>
+                <p>Neque corporis blanditiis perspiciatis incidunt doloremque nostrum hic excepturi, id, quas ab et velit animi voluptatibus saepe totam facere suscipit numquam ea, facilis eos ullam aliquam? Quis, minus nihil culpa accusamus aliquid deserunt odit harum expedita quibusdam, illo similique libero, tempore in ipsam pariatur voluptas possimus natus ut magni. Corrupti?</p>    
+            </div>
+            <div class="col-6">
+                <p>Ipsum, obcaecati deserunt magnam, ex corrupti sed ad nam id quibusdam delectus officiis, amet maiores nesciunt tenetur ab fugit eligendi alias aliquam dolorum et. Maiores vitae accusantium nostrum impedit, id harum veniam pariatur rerum architecto dignissimos qui ratione. Error ipsam est consequuntur. Rerum, est. Exercitationem maxime iure atque quidem ipsum?</p>
+                <p>Soluta quae voluptatibus, maxime laborum dicta consequatur ab nihil quasi voluptatem perferendis sint id culpa labore aspernatur expedita ipsam cupiditate mollitia exercitationem velit ut reiciendis vitae quam? Ut eveniet sit aliquid? Culpa explicabo mollitia perferendis dolorum distinctio architecto facilis optio dolores! Sequi minus sint inventore omnis illo ipsam incidunt beatae.</p>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Heading</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <p>Some text lorem ipsum.</p>
+        <p>Some text lorem ipsum.</p>
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="offcanvas">Close This Thing</button>
+        </div>
+    </div>
+    
+    <!-- Button to open the offcanvas sidebar -->
+    <button class="btn btn-primary m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Open Offcanvas Sidebar
+    </button>
+
+    <div class="container-fluid">
+        <h2>Bootstrap</h2> 
+        <!-- p*5>lorem40 -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi optio expedita odit in quod. Nihil iste, eum ea natus, quo veritatis assumenda vero quos ex sint sapiente est aspernatur dolorem? Esse aliquam quia perspiciatis recusandae vel quos porro labore modi!</p>
+        <p>Corrupti cumque delectus minus recusandae, expedita commodi, quibusdam, voluptatibus aliquam debitis architecto iste aspernatur. Nisi optio reprehenderit corrupti praesentium odio iusto molestiae, corporis, quos accusamus illo expedita sequi neque atque laudantium perspiciatis? Saepe eos libero ipsum magnam dolorem eaque error.</p>
+        <p>Dolores maiores dicta ducimus molestias magni quaerat quisquam officia qui blanditiis fuga odit culpa obcaecati nemo laudantium necessitatibus iste reiciendis debitis porro quod labore molestiae, nobis distinctio saepe odio! Non qui consectetur in corporis voluptas adipisci vel ducimus, saepe esse.</p>
+        <p>Tempore reprehenderit deleniti exercitationem nesciunt asperiores tempora incidunt iusto maiores itaque numquam et libero officiis non, a odio, maxime repellat accusantium esse quas voluptatem eaque. Expedita, harum id in ratione, incidunt magni exercitationem eum vitae dolorem dolores nesciunt vel maxime!</p>
+        <p>Tempora ratione sapiente, omnis rerum, ipsam libero praesentium atque exercitationem ea vero at molestiae deleniti sit necessitatibus, modi consequuntur itaque incidunt consequatur. Explicabo ipsa, quae ad ullam exercitationem aliquam et autem fugit dolorum in hic! Accusamus, porro! Quos, in numquam!</p>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>    jhgfdszfghjkl
+
+    <script>
+        //let h2s = jQuery('h2')
+        let $h2s = $('h2')
+        $h2s.addClass('display-3 text-danger')
+    </script>
+
+</body>
+</html>
