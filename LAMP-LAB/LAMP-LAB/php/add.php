@@ -60,7 +60,7 @@ $conn->close();
 ?>
 
     <br><br>
-    <button type="button" onclick="history.back()">Back</button>
+    <button type="button" class="btn btn-primary"onclick="history.back()">Back</button>
 
 </body>
 
