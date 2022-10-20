@@ -12,7 +12,7 @@
 <!-- 
     NOTE: this is our backend (server side) code. 
     1. User cannot see this code -- unlike HTML/CSS/JavaScript
-    2. This is how we will do database opperations (DB is also on server)
+    2. This is how we will do database operations (DB is also on server)
 -->    
 
 <?php
@@ -60,7 +60,7 @@ $conn->close();
 ?>
 
     <br><br>
-    <button onclick="history.back()">Back</button>
+    <button type="button" onclick="history.back()">Back</button>
 
 </body>
 
