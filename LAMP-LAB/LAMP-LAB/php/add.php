@@ -44,6 +44,16 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// output data of each row
+while($row = $result->fetch_assoc()) {
+  echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+}
+
+
+
+
+
+
 $conn->close();
 
 ?>
