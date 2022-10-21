@@ -50,7 +50,7 @@ if ($conn->query($sql) === TRUE) {
 $result = $conn->query("SELECT firstname FROM randuser")
 // output data of each row
 while($row = $result->fetch_assoc()) {
-  echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. "<br>";
+  echo "First Name: " . $row["firstname"]. "<br>";
 }
 
 
