@@ -48,14 +48,11 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $result = $conn->query("SELECT firstname FROM randuser")
-if ($result-> num_row > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. "<br>";
-  }
-} else {
-  echo "0 results";
+// output data of each row
+while($row = $result->fetch_assoc()) {
+  echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. "<br>";
 }
+
 
 // output data of each row
 while($row = $result->fetch_assoc()) {
