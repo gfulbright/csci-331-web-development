@@ -9,7 +9,7 @@
 <title>User Listing</title>
 </head>
 <body>
-    <h1 class="display-1">Added</h1>
+    <h1>Added</h1>
 
 <!-- 
     NOTE: this is our backend (server side) code. 
@@ -59,7 +59,7 @@ $conn->close();
 ?>
 
     <br><br>
-    <button type="button" class="btn btn-primary"onclick="history.back()">Back</button>
+    <button onclick="history.back()">Back</button>
 
 </body>
 
