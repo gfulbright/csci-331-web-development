@@ -35,7 +35,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// SQL OPPERATIONS
+// SQL OPERATIONS
 $sql = "INSERT INTO randuser VALUES ('$firstname')";
 
 if ($conn->query($sql) === TRUE) {
