@@ -44,12 +44,17 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+$result = $conn->query($sql);
 
-$result = $conn->query("SELECT firstname FROM randuser")
-// output data of each row
-while($row = $result->fetch_assoc()) {
-  echo "First Name: " . $row["firstname"]. "<br>";
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. "<br>";
+  }
+} else {
+  echo "0 results";
 }
+
 
 $conn->close();
 
