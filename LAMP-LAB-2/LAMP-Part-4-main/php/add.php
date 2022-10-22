@@ -36,7 +36,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "INSERT INTO randuser VALUES ('$firstname')";
+$sql = "INSERT INTO students VALUES ('$firstname')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
