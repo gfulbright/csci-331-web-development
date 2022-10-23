@@ -20,8 +20,10 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "SELECT * FROM randuser";
-
+// $sql = "SELECT * FROM randuser";
+$sql = "CREATE TABLE randuser( ".
+  "firstname VARCHAR(40));";
+  
 $out = $conn-> query($sql);
 var_dump($out);
 
