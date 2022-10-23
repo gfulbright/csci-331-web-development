@@ -23,7 +23,7 @@ $lastname = $_GET['apiLast'];
 $country = $_GET['apiCountry'];
 
 echo "<h2>Newly Added</h2>";
-echo "<p><strong>$firstname</strong> has been added.</p>";
+echo "<p><i class=success><strong>$firstname</strong> has been added.</p>";
 
 
 // DATABASE OPERATIONS:
@@ -91,6 +91,7 @@ $conn->close();
 </body>
 
 <footer>
+  <br><br>
   <p class="lead" style="margin-left:10%">
     Bootstrap was used to edit the h1 tag, the p tags, and the button to make it "primary" blue color.
   </p>
