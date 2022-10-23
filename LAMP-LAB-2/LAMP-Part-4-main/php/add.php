@@ -53,7 +53,7 @@ if ($conn->query($sql) === TRUE) {
 $result = $conn->query("SELECT * FROM randuser2");
 
 
-echo "<table style='width:80%; margin-left:10%'>
+echo "<table style='width:70%; margin-left:15%'>
 <tr>
 <th>Firstname</th>
 <th>Lastname</th>
