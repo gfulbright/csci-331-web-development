@@ -22,7 +22,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $country = $_GET['apiCountry'];
 
-echo "<h2>Newly Added</h2>";
+echo "<h2 style="margin-left:10%">Newly Added</h2>";
 echo "<p><strong>$firstname</strong> has been added.</p>";
 
 
@@ -45,7 +45,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO randuser2 VALUES ('$firstname', '$lastname', '$country')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully <br>";
+  echo "<p style="margin-left:10%">New record created successfully</p> <br>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -53,7 +53,7 @@ if ($conn->query($sql) === TRUE) {
 $result = $conn->query("SELECT * FROM randuser2");
 
 
-echo "<table style='width:100%; border-bottom-width:1px'>
+echo "<table style='width:100%; margin-left10%'>
 <tr>
 <th>Firstname</th>
 <th>Lastname</th>
