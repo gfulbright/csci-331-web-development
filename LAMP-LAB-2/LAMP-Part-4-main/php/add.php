@@ -36,13 +36,10 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "CREATE TABLE randuser( ".
-  "firstname VARCHAR(40));";
-  
 $sql = "INSERT INTO randuser VALUES ('$firstname')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "New record created successfully <br>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
