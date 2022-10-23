@@ -36,7 +36,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "INSERT INTO randuser VALUES ('$firstname')";
+$sql = "INSERT INTO randuser2 VALUES ('$firstname')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully <br>";
@@ -44,12 +44,14 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$result = $conn->query("SELECT firstname FROM randuser");
+$result = $conn->query("SELECT * FROM randuser2");
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "First Name: " . $row["firstname"]. "<br>";
+    echo "Last Name: " . $row["lastname"]. "<br>";
+    echo "Country: " . $row["country"]. "<br>";
   }
 }
 
