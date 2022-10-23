@@ -45,7 +45,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO randuser2 VALUES ('$firstname', '$lastname', '$country')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<p style="margin-left:10%">New record created successfully</p> <br>";
+  echo "<p>New record created successfully</p> <br>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
