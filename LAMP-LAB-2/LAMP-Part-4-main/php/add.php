@@ -55,11 +55,9 @@ $result = $conn->query("SELECT * FROM randuser2");
 
 echo "<table style='width:100%'>
 <tr>
-<th></th>
 <th>Firstname</th>
 <th>Lastname</th>
 <th>Country</th>
-<th></th>
 </tr>";
 
 while($row = $result->fetch_assoc())
