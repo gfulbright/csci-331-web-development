@@ -52,40 +52,33 @@ if ($conn->query($sql) === TRUE) {
 
 $result = $conn->query("SELECT * FROM randuser2");
 
-// if ($result->num_rows > 0) {
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-//     echo "First Name: " . $row["firstname"]. "<br>";
-//     echo "Last Name: " . $row["lastname"]. "<br>";
-//     echo "Country: " . $row["country"]. "<br>";
-//   }
-// }
 
-// if ($result->num_rows > 0) {
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-//     echo "First Name: " . $row["firstname"]. "<br>";
-//     echo "Last Name: " . $row["lastname"]. "<br>";
-//     echo "Country: " . $row["country"]. "<br>";
-//   }
-// }
+echo "<table border='1'>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Country</th>
+</tr>";
+
+while($row = $result->fetch_assoc())
+{
+echo "<tr>";
+echo "<td>" . $row['firstname'] . "</td>";
+echo "<td>" . $row['lastname'] . "</td>";
+echo "<td>" . $row['country'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
 
 
 if ($result->num_rows > 0) {
-  while ($row = $result->fetch_assoc()) {
-      $firstname = $row["col1"];
-      $lastname = $row["col2"];
-      $country = $row["col3"];
-
-
-      echo '<tr> 
-                <td>'.$firstname.'</td> 
-                <td>'.$lastname.'</td> 
-                <td>'.$country.'</td> 
-            </tr>';
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "First Name: " . $row["firstname"]. "<br>";
+    echo "Last Name: " . $row["lastname"]. "<br>";
+    echo "Country: " . $row["country"]. "<br>";
   }
-  $result->free();
-} 
+}
 
 
 $conn->close();
