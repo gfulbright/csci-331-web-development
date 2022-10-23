@@ -52,14 +52,24 @@ if ($conn->query($sql) === TRUE) {
 
 $result = $conn->query("SELECT * FROM randuser2");
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "First Name: " . $row["firstname"]. "<br>";
-    echo "Last Name: " . $row["lastname"]. "<br>";
-    echo "Country: " . $row["country"]. "<br>";
-  }
-}
+// if ($result->num_rows > 0) {
+//   // output data of each row
+//   while($row = $result->fetch_assoc()) {
+//     echo "First Name: " . $row["firstname"]. "<br>";
+//     echo "Last Name: " . $row["lastname"]. "<br>";
+//     echo "Country: " . $row["country"]. "<br>";
+//   }
+// }
+
+// if ($result->num_rows > 0) {
+//   // output data of each row
+//   while($row = $result->fetch_assoc()) {
+//     echo "First Name: " . $row["firstname"]. "<br>";
+//     echo "Last Name: " . $row["lastname"]. "<br>";
+//     echo "Country: " . $row["country"]. "<br>";
+//   }
+// }
+
 
 if ($result->num_rows > 0) {
   while ($row = $result->fetch_assoc()) {
