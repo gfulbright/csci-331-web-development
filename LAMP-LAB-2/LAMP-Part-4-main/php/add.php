@@ -86,12 +86,12 @@ $conn->close();
 ?>
 
     <br><br>
-    <button onclick="history.back()" type="button" class="btn btn-primary">❮ ❮ Back</button>
+    <button onclick="history.back()" type="button" class="btn btn-primary" style="margin-left:10%">❮ ❮ Back</button>
 
 </body>
 
 <footer>
-  <p class="lead">
+  <p class="lead" style="margin-left:10%">
     Bootstrap was used to edit the h1 tag, the p tags, and the button to make it "primary" blue color.
   </p>
 </footer>
