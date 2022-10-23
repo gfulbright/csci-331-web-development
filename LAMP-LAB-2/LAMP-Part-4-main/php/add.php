@@ -3,10 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
     <title>User Listing</title>
 </head>
 <body>
-    <h1>Added</h1>
+    <h1 class="display-1">Added</h1>
 
 <!-- 
     NOTE: this is our backend (server side) code. 
@@ -17,6 +20,9 @@
 <?php
 // DYNAMIC HTML
 $firstname = $_GET['apiFirst'];
+$lastname = $_GET['apiLast'];
+$country = $_GET['apiCountry'];
+
 echo "<p><strong>$firstname</strong> has been added.</p>";
 
 
@@ -36,7 +42,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "INSERT INTO randuser2 VALUES ('$firstname')";
+$sql = "INSERT INTO randuser2 VALUES ('$firstname', '$lastname', '$country')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully <br>";
@@ -64,4 +70,10 @@ $conn->close();
     <button onclick="history.back()">Back</button>
 
 </body>
+
+<footer>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis, saepe optio asperiores maiores accusamus, sint nesciunt impedit veniam similique iure eum, quod repellendus rerum alias quidem. Illum et doloribus dolorum, est soluta officiis molestias vero aperiam in provident ipsam facere voluptate possimus fuga, quod saepe? Eius libero tenetur laborum.
+  </p>
+</footer>
 </html>
