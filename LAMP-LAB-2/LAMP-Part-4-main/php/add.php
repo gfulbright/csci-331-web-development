@@ -22,7 +22,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $country = $_GET['apiCountry'];
 
-echo "<div class="row"><div class="col-md"><p><strong>$firstname</strong> has been added.</p></div></div>";
+echo "<p><strong>$firstname</strong> has been added.</p>";
 
 
 // DATABASE OPERATIONS:
