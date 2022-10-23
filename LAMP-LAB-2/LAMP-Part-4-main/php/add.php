@@ -36,7 +36,9 @@ if ($conn->connect_error) {
 }
 
 // SQL OPERATIONS
-$sql = "INSERT INTO students VALUES ('$firstname')";
+$sql = "CREATE TABLE randuser( ".
+  "firstname VARCHAR(40));";
+$sql = "INSERT INTO randuser VALUES ('$firstname')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -44,15 +46,13 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$result = $conn->query($sql);
+$result = $conn->query("SELECT firstname FROM randuser");
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. "<br>";
+    echo "First Name: " . $row["firstname"]. "<br>";
   }
-} else {
-  echo "0 results";
 }
 
 
