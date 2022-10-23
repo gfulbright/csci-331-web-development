@@ -22,7 +22,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $country = $_GET['apiCountry'];
 
-echo "<h1>Newly Added</h1>";
+echo "<h2>Newly Added</h2>";
 echo "<p><strong>$firstname</strong> has been added.</p>";
 
 
@@ -60,6 +60,22 @@ if ($result->num_rows > 0) {
     echo "Country: " . $row["country"]. "<br>";
   }
 }
+
+if ($result->num_rows > 0) {
+  while ($row = $result->fetch_assoc()) {
+      $firstname = $row["col1"];
+      $lastname = $row["col2"];
+      $country = $row["col3"];
+
+
+      echo '<tr> 
+                <td>'.$firstname.'</td> 
+                <td>'.$lastname.'</td> 
+                <td>'.$country.'</td> 
+            </tr>';
+  }
+  $result->free();
+} 
 
 
 $conn->close();
