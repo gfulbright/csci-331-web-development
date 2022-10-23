@@ -33,6 +33,8 @@ fetch('https://randomuser.me/api')      // ...1st Promise obj resolves to Respon
             apiData = document.getElementById("apiData")
             apiData.innerHTML = htmlData
             document.getElementById("addBtn").value = `Add ${apiFirst}`
+            document.getElementById("last").value = `Add ${apiLast}`
+            document.getElementById("country").value = `Add ${apiCountry}`
   })
   .catch(error => {
     mdnCodes = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"

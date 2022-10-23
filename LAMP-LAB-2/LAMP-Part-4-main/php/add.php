@@ -71,8 +71,8 @@ $conn->close();
 </body>
 
 <footer>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis, saepe optio asperiores maiores accusamus, sint nesciunt impedit veniam similique iure eum, quod repellendus rerum alias quidem. Illum et doloribus dolorum, est soluta officiis molestias vero aperiam in provident ipsam facere voluptate possimus fuga, quod saepe? Eius libero tenetur laborum.
+  <p class="lead">
+    Bootstrap was used to edit the h1 tag, the p tags, and the button to make it "primary" blue color.
   </p>
 </footer>
 </html>
