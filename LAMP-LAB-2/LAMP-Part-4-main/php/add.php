@@ -94,6 +94,9 @@ $conn->close();
   <br><br>
   <p class="lead" style="margin-left:10%">
     Bootstrap was used to edit the h1 tag, the p tags, and the button to make it "primary" blue color.
+    <br>
+    The cells of the table exist, they just are not filled because of the 'Undefined Array Key' error.
   </p>
+  <br><br>
 </footer>
 </html>
