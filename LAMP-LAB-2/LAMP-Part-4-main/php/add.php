@@ -22,7 +22,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $country = $_GET['apiCountry'];
 
-echo "<h2 style="margin-left:10%">Newly Added</h2>";
+echo "<h2>Newly Added</h2>";
 echo "<p><strong>$firstname</strong> has been added.</p>";
 
 
